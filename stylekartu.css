@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(-90deg,black,rgb(58, 10, 58),rgb(8, 8, 63));
+}
+/* bagian id card*/
+.kartu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.kartu{
+    width: 250px;
+    height: 460px;
+    position: relative;
+    display: flex;
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.4rem;
+    padding: 10px;
+    transition: all .3s ease-in;
+    text-align: center;
+}
+.kartu > *{
+    padding: 5px;
+}
+.kartu .kartu-foto{
+    height: 150px;
+    width: 150px;
+    border: 5px double rebeccapurple;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+}
+.kartu .kartu-judul{
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 2px #262654;
+    text-align: center;
+}
+.kartu:nth-child(1) .kartu-foto{
+    background-image: url(oliv.png);
+}
+.kartu:nth-child(2) .kartu-foto{
+    background-image: url(edo.png);
+}
+.kartu:nth-child(3) .kartu-foto{
+    background-image: url(iqbal.png);
+}
+.kartu:hover{
+    background: rgb(58, 10, 58);
+    color: #ffffff;
+    box-shadow: 0px 0px 11px 5px rgba(241, 243, 241, 0.651);
+}
+.kartu .kartu-judul{
+    line-height: 20px;
+}
